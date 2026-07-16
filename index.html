@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shika Yoga by Veda Shreedhar | Breath, Move & Align</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <!-- Full-screen ripple background canvas -->
+    <canvas id="ripple-canvas"></canvas>
+
+    <!-- Main Content Container -->
+    <div id="app">
+      <!-- Navbar -->
+      <header class="header">
+        <div class="header-container">
+          <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-wind"></i></span>
+            <span class="logo-text">Shika Yoga <small style="font-size:0.65rem; font-weight:400; opacity:0.8; display:block; margin-top:-4px;">by Veda Shreedhar</small></span>
+          </div>
+          <nav class="nav">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#founder" class="nav-link">Founder</a>
+            <a href="#oracle" class="nav-link">Oracle</a>
+            <a href="#classes" class="nav-link">Classes</a>
+            <a href="#meditation" class="nav-link">Meditation</a>
+            <a href="#booking" class="nav-link">Book Now</a>
+          </nav>
+          <div class="header-actions">
+            <a href="#booking" class="btn btn-primary btn-nav">Book a Session</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <!-- Giant Background Watermark Text -->
+        <div class="hero-watermark">SHIKA YOGA</div>
+        
+        <!-- Background Yoga Pose Image (King Pigeon Pose & Leaves) -->
+        <img src="/assets/pigeon.png" class="bg-pose-img pose-hero float-anim-1" alt="King Pigeon Pose">
+
+        <div class="hero-content">
+          <div class="badge fade-in">Yoga & Meditation Sanctuary</div>
+          <h1 class="hero-title fade-in">
+            Breath. Move. Align. <br>
+            <span class="accent-text">Find Your Center.</span>
+          </h1>
+          <p class="hero-description fade-in">
+            Embark on a transformative journey of mindfulness, dynamic yoga sequences, and restorative soundscapes guided by Veda Shreedhar. Tap anywhere to ripple the sanctuary pool.
+          </p>
+          <div class="hero-cta fade-in">
+            <a href="#oracle" class="btn btn-gold">Consult the Oracle</a>
+            <a href="#classes" class="btn btn-outline">Explore Classes</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founder Biography Section -->
+      <section id="founder" class="founder-section">
+        <div class="container">
+          <!-- Background Yoga Pose Image (Tree Pose) -->
+          <img src="/assets/tree.png" class="bg-pose-img pose-about float-anim-2" alt="Tree Pose">
+
+          <div class="meditation-layout">
+            <div class="meditation-text">
+              <span class="section-subtitle">Meet Your Guide</span>
+              <h2 class="section-title">Veda Shreedhar</h2>
+              <p class="meditation-desc">
+                Veda Shreedhar is a certified Yoga Therapist, somatic coach, and sound healing expert with over a decade of teaching. Her mission is to help people move with intention, release built-up stress, and rebuild alignment from the feet up.
+              </p>
+              <div class="features-list" style="margin-top: 8px;">
+                <div class="feature-item">
+                  <span class="feature-icon"><i class="fa-solid fa-om"></i></span>
+                  <span><strong>Therapeutic Asana:</strong> Correct alignment patterns to alleviate structural aches.</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon"><i class="fa-solid fa-heart"></i></span>
+                  <span><strong>Pranayama Props:</strong> Deep breathing techniques utilizing blankets, blocks, and bolsters.</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon"><i class="fa-solid fa-bell"></i></span>
+                  <span><strong>Sound Vibrations:</strong> High fidelity Solfeggio sound baths supporting cellular recovery.</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="flex: 0.9; width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: 24px;">
+              <div class="glass hover-card" style="position: relative; overflow: hidden; height: 260px; border-radius: 20px;">
+                <img src="/assets/props.png" style="width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; opacity: 0.85;" alt="Breathing Practices with Props">
+              </div>
+              <div class="glass hover-card" style="padding: 30px; text-align: center; display: flex; flex-direction: column; gap: 12px;">
+                <div style="font-size: 1.05rem; font-style: italic; font-weight: 300; line-height: 1.6; color: var(--text-primary);">
+                  "Yoga is not about touching your toes, it is about what you learn on the way down. Breath by breath, we return to the sanctuary of the body."
+                </div>
+                <div style="font-size: 0.85rem; font-weight: 600; letter-spacing: 1px; color: var(--accent-gold); text-transform: uppercase;">
+                  — Veda Shreedhar
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Oracle Prompt Section -->
+      <section id="oracle" class="oracle-section">
+        <div class="container">
+          <!-- Background Yoga Pose Image (Forearm Stand) -->
+          <img src="/assets/forearm.png" class="bg-pose-img pose-oracle float-anim-1" alt="Forearm Stand">
+
+          <div class="section-header">
+            <span class="section-subtitle">Batcloud Divination</span>
+            <h2 class="section-title">Consult the Inner Ripple</h2>
+            <p class="section-desc">Type your current feeling or query below, or click the pool to generate waves. Let the Oracle guide your daily practice.</p>
+          </div>
+          
+          <div class="oracle-card glass">
+            <div class="oracle-input-container">
+              <input type="text" id="oracle-input" placeholder="How does your body and mind feel today? (e.g. stressed, stiff, restless...)" autocomplete="off">
+              <button id="oracle-submit-btn" class="btn btn-gold">
+                <span class="btn-text">Cast Seed</span>
+                <span class="btn-icon"><i class="fa-solid fa-droplet"></i></span>
+              </button>
+            </div>
+            
+            <div class="oracle-ripple-indicator">
+              <div class="pulse-ring"></div>
+              <div class="pulse-ring delay-1"></div>
+              <div class="pulse-ring delay-2"></div>
+              <i class="fa-solid fa-fingerprint"></i>
+            </div>
+            
+            <!-- Result Box -->
+            <div id="oracle-result" class="oracle-result hidden">
+              <div class="result-divider"></div>
+              <div class="oracle-result-content">
+                <div class="result-badge" id="result-category">Meditation</div>
+                <h3 class="result-title" id="result-title">Divine Stillness Flow</h3>
+                <p class="result-description" id="result-desc">A deep, grounding practice focused on expanding breath capacity and calming the nervous system.</p>
+                <div class="result-meta">
+                  <span class="meta-item"><i class="fa-regular fa-clock"></i> <span id="result-duration">20 mins</span></span>
+                  <span class="meta-item"><i class="fa-solid fa-gauge-simple-high"></i> <span id="result-level">Beginner</span></span>
+                </div>
+                <button class="btn btn-primary btn-sm start-session-btn" id="start-session-btn">Start Practice</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Classes Section -->
+      <section id="classes" class="classes-section">
+        <div class="container">
+          <!-- Background Yoga Pose Image (Compass Pose) -->
+          <img src="/assets/compass.png" class="bg-pose-img pose-classes float-anim-1" alt="Compass Pose">
+
+          <div class="section-header">
+            <span class="section-subtitle">Our Offerings</span>
+            <h2 class="section-title">Curated Classes for Harmony</h2>
+            <p class="section-desc">Experience practices designed to strengthen the physical vessel and soothe the spirit.</p>
+          </div>
+
+          <div class="grid class-grid">
+            <!-- Class Card 1 -->
+            <div class="class-card glass hover-card">
+              <div class="class-image-container">
+                <div class="class-image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600" alt="Vinyasa Flow" class="class-image">
+                <span class="class-tag">Dynamic</span>
+              </div>
+              <div class="class-content">
+                <h3 class="class-title">Vinyasa Energy Flow</h3>
+                <p class="class-desc">Led by Veda Shreedhar. Align movement with breath in this athletic, flowing practice designed to build strength and clear mental clutter.</p>
+                <div class="class-footer">
+                  <span class="class-duration"><i class="fa-regular fa-clock"></i> 60 min</span>
+                  <a href="#booking" class="btn btn-outline-gold btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Class Card 2 -->
+            <div class="class-card glass hover-card">
+              <div class="class-image-container">
+                <div class="class-image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=600" alt="Yin Yoga" class="class-image">
+                <span class="class-tag">Restorative</span>
+              </div>
+              <div class="class-content">
+                <h3 class="class-title">Deep Release Yin</h3>
+                <p class="class-desc">Led by Veda Shreedhar. Slow down with long-held, passive poses targeting deep connective tissues, releasing built-up somatic tension.</p>
+                <div class="class-footer">
+                  <span class="class-duration"><i class="fa-regular fa-clock"></i> 75 min</span>
+                  <a href="#booking" class="btn btn-outline-gold btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Class Card 3 -->
+            <div class="class-card glass hover-card">
+              <div class="class-image-container">
+                <div class="class-image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&q=80&w=600" alt="Guided Meditation" class="class-image">
+                <span class="class-tag">Mindfulness</span>
+              </div>
+              <div class="class-content">
+                <h3 class="class-title">Sound Bath Meditation</h3>
+                <p class="class-desc">Guided by Veda Shreedhar. Immerse yourself in therapeutic acoustic frequencies that ease brainwave patterns into deep meditative states.</p>
+                <div class="class-footer">
+                  <span class="class-duration"><i class="fa-regular fa-clock"></i> 45 min</span>
+                  <a href="#booking" class="btn btn-outline-gold btn-sm">Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- Audio Meditation Section -->
+      <section id="meditation" class="meditation-section">
+        <div class="container">
+          <div class="meditation-layout">
+            <div class="meditation-text">
+              <span class="section-subtitle">Inner Listening</span>
+              <h2 class="section-title">Binaural & Guided Soundscapes</h2>
+              <p class="meditation-desc">
+                Sound is the bridge between external noise and internal stillness. Experience our signature guided tracks featuring ambient textures, crystal bowls, and soothing narration by Veda Shreedhar.
+              </p>
+              <div class="features-list">
+                <div class="feature-item">
+                  <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
+                  <span>Solfeggio frequencies optimized for nervous system recovery.</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
+                  <span>High fidelity stereo recordings for headphone listening.</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Custom Sound Player -->
+            <div class="meditation-player-card glass">
+              <div class="player-header">
+                <span class="now-playing">NOW STREAMING</span>
+                <span class="live-indicator"><span class="dot"></span> LIVE</span>
+              </div>
+              
+              <div class="player-disc-container">
+                <div class="player-disc">
+                  <div class="disc-inner">
+                    <i class="fa-solid fa-yin-yang"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-info">
+                <h3 class="track-title" id="player-track-title">Etheric Breath Release</h3>
+                <p class="track-artist" id="player-track-desc">Guided Pranayama & Solfeggio 528Hz</p>
+              </div>
+
+              <!-- Soundwaves Visualizer -->
+              <div class="sound-wave-visualizer" id="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+
+              <!-- Time details -->
+              <div class="player-time">
+                <span class="current-time" id="player-current-time">0:00</span>
+                <span class="total-time" id="player-total-time">12:30</span>
+              </div>
+
+              <!-- Progress bar -->
+              <div class="player-progress-container" id="player-progress-bar">
+                <div class="player-progress-fill" id="player-progress-fill"></div>
+              </div>
+
+              <!-- Player Controls -->
+              <div class="player-controls">
+                <button class="player-btn btn-secondary" id="player-prev"><i class="fa-solid fa-backward"></i></button>
+                <button class="player-btn btn-play-pause" id="player-play-btn"><i class="fa-solid fa-play"></i></button>
+                <button class="player-btn btn-secondary" id="player-next"><i class="fa-solid fa-forward"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Section -->
+      <section id="booking" class="booking-section">
+        <div class="container">
+          <div class="booking-card glass">
+            <div class="booking-header text-center">
+              <span class="section-subtitle">Begin Your Journey</span>
+              <h2 class="section-title">Schedule a Session</h2>
+              <p class="section-desc">Select your date and time to reserve a mat at our boutique sanctuary.</p>
+            </div>
+            
+            <form id="booking-form" class="booking-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="booking-name">Full Name</label>
+                  <input type="text" id="booking-name" required placeholder="Siddhartha Gautama">
+                </div>
+                <div class="form-group">
+                  <label for="booking-email">Email Address</label>
+                  <input type="email" id="booking-email" required placeholder="innerpeace@zen.com">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="booking-class">Select Practice</label>
+                  <select id="booking-class" required>
+                    <option value="" disabled selected>Choose a session...</option>
+                    <option value="vinyasa">Vinyasa Energy Flow - Mon/Wed 8:00 AM</option>
+                    <option value="yin">Deep Release Yin - Tue/Thu 6:00 PM</option>
+                    <option value="meditation">Sound Bath Meditation - Fri 7:00 PM</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="booking-date">Date</label>
+                  <input type="date" id="booking-date" required>
+                </div>
+              </div>
+              
+              <div class="form-actions text-center">
+                <button type="submit" class="btn btn-gold btn-large">Reserve Mat</button>
+              </div>
+            </form>
+
+            <div id="booking-success" class="booking-success hidden">
+              <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <h3>Mat Reserved Successfully</h3>
+              <p>Your session reservation details have been sent to your email. We look forward to breathing with you.</p>
+              <button class="btn btn-outline-gold btn-sm" id="booking-reset-btn">Book Another Session</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-wind"></i></span>
+                <span class="logo-text">Shika Yoga</span>
+              </div>
+              <p class="brand-desc">A premium sanctuary for physical strength and mental stillness. Connect to the natural patterns of sound and movement.</p>
+              <div class="social-links">
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-spotify"></i></a>
+              </div>
+            </div>
+            
+            <div class="footer-links">
+              <h4>Quick Navigation</h4>
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#oracle">Divination Oracle</a></li>
+                <li><a href="#classes">Yoga Classes</a></li>
+                <li><a href="#meditation">Soundscapes</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+              <h4>Weekly Insights</h4>
+              <p>Subscribe to receive meditation recordings, class updates, and spiritual articles.</p>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button class="btn btn-gold btn-icon-only"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; 2026 Shika Yoga. Designed with love and fluid ripples.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
